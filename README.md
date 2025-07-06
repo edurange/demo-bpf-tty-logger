@@ -1,5 +1,5 @@
 # TTY Logging with BPF
-See https://github.com/edurange/demo-bpf-tty-logger.
+
 Demonstrates how to capture TTY activity using BPF kernel probes.
 
 # Instructions
