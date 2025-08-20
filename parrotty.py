@@ -268,7 +268,7 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, handleinterrupt)
     signal.signal(signal.SIGTERM, handleinterrupt)
     
-    b = BPF(text=bpf_text)
+    b = BPF(text=bpf_text, cflags=["-Wno-duplicate-decl-specifier"])
     
     b["events"].open_ring_buffer(handleevent)
     
